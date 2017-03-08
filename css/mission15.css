@@ -188,11 +188,36 @@ section {
 #portfolio {
     background-color: #f9f9f9;
 }
+
 #portfolio .container {
     width: 1170px;
 }
+
 #portfolio .container>ul>li img {
     width: 360px;
+}
+
+.img {
+    position: absolute;
+    width: 360px;
+    height: 260.09px;
+    background-color: rgba(254,209,54,.9);
+    opacity: 0;
+}
+
+.img a {
+    text-decoration: none;
+    font-size: 50px;
+    color: white;
+    line-height: 260px;
+}
+
+.img:hover {
+    opacity: 1;
+}
+
+#protfolio .container>ul>li img:hover {
+
 }
 #portfolio .container>ul:after {
     content: '';
@@ -202,6 +227,7 @@ section {
 
 #portfolio .container>ul>li {
     float: left;
+    font-size: 0;
     padding: 0 15px;
     margin-bottom: 30px;
 }
